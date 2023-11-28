@@ -157,6 +157,19 @@ print(names(AvgExpenditures19vs20v1))
 print(dim(AvgExpenditures19vs20v1))
 print(summary(AvgExpenditures19vs20v1))
 ```
+```{r}
+print(summary(AvgExpenditures19vs20v1))|>
+knitr::kable()
+```
+
+# Get number of rows and columns
+
+```{r}
+nbrows <- nrow(AvgExpenditures19vs20v1 %>% distinct(Country))
+nbcol <- ncol(AvgExpenditures19vs20v1)
+```
+
+The Cleaned Data set B Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
 ## C) Food Expenditures
 
@@ -189,6 +202,19 @@ print(names(FoodExpenditures19vs20v1))
 print(dim(FoodExpenditures19vs20v1))
 print(summary(FoodExpenditures19vs20v1))
 ```
+```{r}
+print(summary(FoodExpenditures19vs20v1))|>
+knitr::kable()
+```
+
+# Get number of rows and columns
+
+```{r}
+nbrows <- nrow(FoodExpenditures19vs20v1 %>% distinct(Country))
+nbcol <- ncol(FoodExpenditures19vs20v1)
+```
+
+The Cleaned Data set C Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
 ## D) Forest
 
@@ -220,7 +246,7 @@ Forest19vs20v1 <- Forest19vs20 |>
     pivot_wider(names_from= Year, values_from= Proportionofprotectedforests)
 ```
 
-### Data set C cleaning task 5 : Renaming the first column
+### Data set D cleaning task 5 : Renaming the first column
 
 ```{r}
 Forest19vs20v1 <- Forest19vs20v1|>
@@ -234,6 +260,19 @@ print(names(Forest19vs20v1))
 print(dim(Forest19vs20v1))
 print(summary(Forest19vs20v1))
 ```
+```{r}
+print(summary(Forest19vs20v1))|>
+knitr::kable()
+```
+
+# Get number of rows and columns
+
+```{r}
+nbrows <- nrow(Forest19vs20v1 %>% distinct(Country))
+nbcol <- ncol(Forest19vs20v1)
+```
+
+The Cleaned Data set D Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
 ## E) Gross Domestic Product per capita
 
@@ -258,6 +297,19 @@ print(names(GDP19vs20))
 print(dim(GDP19vs20))
 print(summary(GDP19vs20))
 ```
+```{r}
+print(summary(GDP19vs20))|>
+knitr::kable()
+```
+
+# Get number of rows and columns
+
+```{r}
+nbrows <- nrow(GDP19vs20 %>% distinct(Country))
+nbcol <- ncol(GDP19vs20)
+```
+
+The Cleaned Data set E Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
 ## F) GINI Index
 
@@ -296,6 +348,19 @@ print(names(Gini19vs20v1))
 print(dim(Gini19vs20v1))
 print(summary(Gini19vs20v1))
 ```
+```{r}
+print(summary(Gini19vs20v1))|>
+knitr::kable()
+```
+
+# Get number of rows and columns
+
+```{r}
+nbrows <- nrow(Gini19vs20v1 %>% distinct(Country))
+nbcol <- ncol(Gini19vs20v1)
+```
+
+The Cleaned Data set F Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
 ## G) Happiness Ladder
 
@@ -334,6 +399,19 @@ print(names(Happy19vs20v1))
 print(dim(Happy19vs20v1))
 print(summary(Happy19vs20v1))
 ```
+```{r}
+print(summary(Happy19vs20v1))|>
+knitr::kable()
+```
+
+# Get number of rows and columns
+
+```{r}
+nbrows <- nrow(Happy19vs20v1 %>% distinct(Country))
+nbcol <- ncol(Happy19vs20v1)
+```
+
+The Cleaned Data set G Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
 ## H) Terrorism Attacks
 ### Data set H cleaning task 1 : Focus (2019 VS 2020)
@@ -362,7 +440,43 @@ TerrorDeath19vs20 <- TerrorDeath19vs20|>
 TerrorDeath19vs20[is.na(TerrorDeath19vs20[, ncol(TerrorDeath19vs20)]), ncol(TerrorDeath19vs20)] <- 0
 
 ```
+### Data set H cleaning task 5 : Renaming the first column
 
+```{r}
+TerrorDeath19vs20 <- TerrorDeath19vs20|>
+  rename(Country=Entity)
+```
+
+### Data set D cleaning task 6 : pivoting
+
+```{r}
+TerrorDeath19vs20v1 <- TerrorDeath19vs20 |>
+    pivot_wider(names_from= Year, values_from= Terrorism.deaths)
+```
+
+### Cleaned Data set H Summary
+
+```{r}
+print(names(TerrorDeath19vs20v1))
+print(dim(TerrorDeath19vs20v1))
+print(summary(TerrorDeath19vs20v1))
+```
+
+
+```{r}
+print(summary(TerrorDeath19vs20v1))|>
+knitr::kable()
+```
+
+
+# Get number of rows and columns
+
+```{r}
+nbrows <- nrow(TerrorDeath19vs20v1 %>% distinct(Country))
+nbcol <- ncol(TerrorDeath19vs20v1)
+```
+
+The Cleaned Data set H Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
 # V. Description of our Research Question :
 
