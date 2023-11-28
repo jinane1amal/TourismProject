@@ -50,57 +50,57 @@ Afghanistan;AFG;2018;9812
 Afghanistan;AFG;2019;8257
 Afghanistan;AFG;2020;10081
 Afghanistan;AFG;2021;4337
-Africa;;1970;1
-Africa;;1971;2
-Africa;;1972;0
-Africa;;1973;5
-Africa;;1974;4
-Africa;;1975;29
-Africa;;1976;8
-Africa;;1977;17
-Africa;;1978;51
-Africa;;1979;215
-Africa;;1980;100
-Africa;;1981;169
-Africa;;1982;53
-Africa;;1983;482
-Africa;;1984;1044
-Africa;;1985;213
-Africa;;1986;814
-Africa;;1987;849
-Africa;;1988;708
-Africa;;1989;1203
-Africa;;1990;684
-Africa;;1991;1401
-Africa;;1992;2719
-Africa;;1994;3893
-Africa;;1995;1836
-Africa;;1996;2973
-Africa;;1997;6604
-Africa;;1998;2398
-Africa;;1999;1246
-Africa;;2000;1559
-Africa;;2001;1796
-Africa;;2002;1660
-Africa;;2003;858
-Africa;;2004;520
-Africa;;2005;699
-Africa;;2006;1176
-Africa;;2007;1651
-Africa;;2008;1724
-Africa;;2009;1936
-Africa;;2010;939
-Africa;;2011;1311
-Africa;;2012;3105
-Africa;;2013;4458
-Africa;;2014;14462
-Africa;;2015;12411
-Africa;;2016;7954
-Africa;;2017;7931
-Africa;;2018;6999
-Africa;;2019;6813
-Africa;;2020;9114
-Africa;;2021;4872
+Africa;0;1970;1
+Africa;0;1971;2
+Africa;0;1972;0
+Africa;0;1973;5
+Africa;0;1974;4
+Africa;0;1975;29
+Africa;0;1976;8
+Africa;0;1977;17
+Africa;0;1978;51
+Africa;0;1979;215
+Africa;0;1980;100
+Africa;0;1981;169
+Africa;0;1982;53
+Africa;0;1983;482
+Africa;0;1984;1044
+Africa;0;1985;213
+Africa;0;1986;814
+Africa;0;1987;849
+Africa;0;1988;708
+Africa;0;1989;1203
+Africa;0;1990;684
+Africa;0;1991;1401
+Africa;0;1992;2719
+Africa;0;1994;3893
+Africa;0;1995;1836
+Africa;0;1996;2973
+Africa;0;1997;6604
+Africa;0;1998;2398
+Africa;0;1999;1246
+Africa;0;2000;1559
+Africa;0;2001;1796
+Africa;0;2002;1660
+Africa;0;2003;858
+Africa;0;2004;520
+Africa;0;2005;699
+Africa;0;2006;1176
+Africa;0;2007;1651
+Africa;0;2008;1724
+Africa;0;2009;1936
+Africa;0;2010;939
+Africa;0;2011;1311
+Africa;0;2012;3105
+Africa;0;2013;4458
+Africa;0;2014;14462
+Africa;0;2015;12411
+Africa;0;2016;7954
+Africa;0;2017;7931
+Africa;0;2018;6999
+Africa;0;2019;6813
+Africa;0;2020;9114
+Africa;0;2021;4872
 Albania;ALB;1970;0
 Albania;ALB;1971;0
 Albania;ALB;1972;0
@@ -437,108 +437,108 @@ Armenia;ARM;2018;0
 Armenia;ARM;2019;0
 Armenia;ARM;2020;0
 Armenia;ARM;2021;0
-Asia;;1970;46
-Asia;;1971;33
-Asia;;1972;35
-Asia;;1973;7
-Asia;;1974;87
-Asia;;1975;67
-Asia;;1976;93
-Asia;;1977;144
-Asia;;1978;820
-Asia;;1979;719
-Asia;;1980;653
-Asia;;1981;937
-Asia;;1982;795
-Asia;;1983;947
-Asia;;1984;1086
-Asia;;1985;1850
-Asia;;1986;1884
-Asia;;1987;2771
-Asia;;1988;3236
-Asia;;1989;3921
-Asia;;1990;3812
-Asia;;1991;3562
-Asia;;1992;4956
-Asia;;1994;2787
-Asia;;1995;2977
-Asia;;1996;2606
-Asia;;1997;2502
-Asia;;1998;1506
-Asia;;1999;1266
-Asia;;2000;1909
-Asia;;2001;1874
-Asia;;2002;2038
-Asia;;2003;1841
-Asia;;2004;4256
-Asia;;2005;5247
-Asia;;2006;7946
-Asia;;2007;10871
-Asia;;2008;7264
-Asia;;2009;7013
-Asia;;2010;6588
-Asia;;2011;6618
-Asia;;2012;11982
-Asia;;2013;17410
-Asia;;2014;28445
-Asia;;2015;25310
-Asia;;2016;26711
-Asia;;2017;18492
-Asia;;2018;15888
-Asia;;2019;13237
-Asia;;2020;13436
-Asia;;2021;6488
-Australasia & Oceania;;1970;0
-Australasia & Oceania;;1971;0
-Australasia & Oceania;;1972;1
-Australasia & Oceania;;1973;0
-Australasia & Oceania;;1974;0
-Australasia & Oceania;;1975;0
-Australasia & Oceania;;1976;0
-Australasia & Oceania;;1977;0
-Australasia & Oceania;;1978;2
-Australasia & Oceania;;1979;0
-Australasia & Oceania;;1980;2
-Australasia & Oceania;;1981;1
-Australasia & Oceania;;1982;0
-Australasia & Oceania;;1983;0
-Australasia & Oceania;;1984;12
-Australasia & Oceania;;1985;0
-Australasia & Oceania;;1986;1
-Australasia & Oceania;;1987;0
-Australasia & Oceania;;1988;22
-Australasia & Oceania;;1989;15
-Australasia & Oceania;;1990;12
-Australasia & Oceania;;1991;3
-Australasia & Oceania;;1992;9
-Australasia & Oceania;;1994;20
-Australasia & Oceania;;1995;6
-Australasia & Oceania;;1996;23
-Australasia & Oceania;;1997;0
-Australasia & Oceania;;1998;0
-Australasia & Oceania;;1999;2
-Australasia & Oceania;;2000;7
-Australasia & Oceania;;2001;0
-Australasia & Oceania;;2002;1
-Australasia & Oceania;;2003;1
-Australasia & Oceania;;2004;0
-Australasia & Oceania;;2005;0
-Australasia & Oceania;;2006;0
-Australasia & Oceania;;2007;0
-Australasia & Oceania;;2008;0
-Australasia & Oceania;;2009;0
-Australasia & Oceania;;2010;0
-Australasia & Oceania;;2011;0
-Australasia & Oceania;;2012;0
-Australasia & Oceania;;2013;0
-Australasia & Oceania;;2014;4
-Australasia & Oceania;;2015;2
-Australasia & Oceania;;2016;0
-Australasia & Oceania;;2017;4
-Australasia & Oceania;;2018;2
-Australasia & Oceania;;2019;51
-Australasia & Oceania;;2020;2
-Australasia & Oceania;;2021;0
+Asia;0;1970;46
+Asia;0;1971;33
+Asia;0;1972;35
+Asia;0;1973;7
+Asia;0;1974;87
+Asia;0;1975;67
+Asia;0;1976;93
+Asia;0;1977;144
+Asia;0;1978;820
+Asia;0;1979;719
+Asia;0;1980;653
+Asia;0;1981;937
+Asia;0;1982;795
+Asia;0;1983;947
+Asia;0;1984;1086
+Asia;0;1985;1850
+Asia;0;1986;1884
+Asia;0;1987;2771
+Asia;0;1988;3236
+Asia;0;1989;3921
+Asia;0;1990;3812
+Asia;0;1991;3562
+Asia;0;1992;4956
+Asia;0;1994;2787
+Asia;0;1995;2977
+Asia;0;1996;2606
+Asia;0;1997;2502
+Asia;0;1998;1506
+Asia;0;1999;1266
+Asia;0;2000;1909
+Asia;0;2001;1874
+Asia;0;2002;2038
+Asia;0;2003;1841
+Asia;0;2004;4256
+Asia;0;2005;5247
+Asia;0;2006;7946
+Asia;0;2007;10871
+Asia;0;2008;7264
+Asia;0;2009;7013
+Asia;0;2010;6588
+Asia;0;2011;6618
+Asia;0;2012;11982
+Asia;0;2013;17410
+Asia;0;2014;28445
+Asia;0;2015;25310
+Asia;0;2016;26711
+Asia;0;2017;18492
+Asia;0;2018;15888
+Asia;0;2019;13237
+Asia;0;2020;13436
+Asia;0;2021;6488
+Australasia & Oceania;0;1970;0
+Australasia & Oceania;0;1971;0
+Australasia & Oceania;0;1972;1
+Australasia & Oceania;0;1973;0
+Australasia & Oceania;0;1974;0
+Australasia & Oceania;0;1975;0
+Australasia & Oceania;0;1976;0
+Australasia & Oceania;0;1977;0
+Australasia & Oceania;0;1978;2
+Australasia & Oceania;0;1979;0
+Australasia & Oceania;0;1980;2
+Australasia & Oceania;0;1981;1
+Australasia & Oceania;0;1982;0
+Australasia & Oceania;0;1983;0
+Australasia & Oceania;0;1984;12
+Australasia & Oceania;0;1985;0
+Australasia & Oceania;0;1986;1
+Australasia & Oceania;0;1987;0
+Australasia & Oceania;0;1988;22
+Australasia & Oceania;0;1989;15
+Australasia & Oceania;0;1990;12
+Australasia & Oceania;0;1991;3
+Australasia & Oceania;0;1992;9
+Australasia & Oceania;0;1994;20
+Australasia & Oceania;0;1995;6
+Australasia & Oceania;0;1996;23
+Australasia & Oceania;0;1997;0
+Australasia & Oceania;0;1998;0
+Australasia & Oceania;0;1999;2
+Australasia & Oceania;0;2000;7
+Australasia & Oceania;0;2001;0
+Australasia & Oceania;0;2002;1
+Australasia & Oceania;0;2003;1
+Australasia & Oceania;0;2004;0
+Australasia & Oceania;0;2005;0
+Australasia & Oceania;0;2006;0
+Australasia & Oceania;0;2007;0
+Australasia & Oceania;0;2008;0
+Australasia & Oceania;0;2009;0
+Australasia & Oceania;0;2010;0
+Australasia & Oceania;0;2011;0
+Australasia & Oceania;0;2012;0
+Australasia & Oceania;0;2013;0
+Australasia & Oceania;0;2014;4
+Australasia & Oceania;0;2015;2
+Australasia & Oceania;0;2016;0
+Australasia & Oceania;0;2017;4
+Australasia & Oceania;0;2018;2
+Australasia & Oceania;0;2019;51
+Australasia & Oceania;0;2020;2
+Australasia & Oceania;0;2021;0
 Australia;AUS;1970;0
 Australia;AUS;1971;0
 Australia;AUS;1972;1
@@ -1699,57 +1699,57 @@ Central African Republic;CAF;2018;227
 Central African Republic;CAF;2019;116
 Central African Republic;CAF;2020;103
 Central African Republic;CAF;2021;62
-Central America & Caribbean;;1970;3
-Central America & Caribbean;;1971;0
-Central America & Caribbean;;1972;0
-Central America & Caribbean;;1973;0
-Central America & Caribbean;;1974;0
-Central America & Caribbean;;1975;36
-Central America & Caribbean;;1976;84
-Central America & Caribbean;;1977;36
-Central America & Caribbean;;1978;164
-Central America & Caribbean;;1979;536
-Central America & Caribbean;;1980;2976
-Central America & Caribbean;;1981;3151
-Central America & Caribbean;;1982;3398
-Central America & Caribbean;;1983;5554
-Central America & Caribbean;;1984;5112
-Central America & Caribbean;;1985;2734
-Central America & Caribbean;;1986;755
-Central America & Caribbean;;1987;1214
-Central America & Caribbean;;1988;739
-Central America & Caribbean;;1989;452
-Central America & Caribbean;;1990;406
-Central America & Caribbean;;1991;714
-Central America & Caribbean;;1992;112
-Central America & Caribbean;;1994;184
-Central America & Caribbean;;1995;81
-Central America & Caribbean;;1996;88
-Central America & Caribbean;;1997;73
-Central America & Caribbean;;1998;0
-Central America & Caribbean;;1999;6
-Central America & Caribbean;;2000;11
-Central America & Caribbean;;2001;2
-Central America & Caribbean;;2002;0
-Central America & Caribbean;;2003;5
-Central America & Caribbean;;2004;38
-Central America & Caribbean;;2005;1
-Central America & Caribbean;;2006;7
-Central America & Caribbean;;2007;2
-Central America & Caribbean;;2008;0
-Central America & Caribbean;;2009;3
-Central America & Caribbean;;2010;0
-Central America & Caribbean;;2011;2
-Central America & Caribbean;;2012;2
-Central America & Caribbean;;2013;9
-Central America & Caribbean;;2014;5
-Central America & Caribbean;;2015;0
-Central America & Caribbean;;2016;9
-Central America & Caribbean;;2017;4
-Central America & Caribbean;;2018;9
-Central America & Caribbean;;2019;6
-Central America & Caribbean;;2020;7
-Central America & Caribbean;;2021;2
+Central America & Caribbean;0;1970;3
+Central America & Caribbean;0;1971;0
+Central America & Caribbean;0;1972;0
+Central America & Caribbean;0;1973;0
+Central America & Caribbean;0;1974;0
+Central America & Caribbean;0;1975;36
+Central America & Caribbean;0;1976;84
+Central America & Caribbean;0;1977;36
+Central America & Caribbean;0;1978;164
+Central America & Caribbean;0;1979;536
+Central America & Caribbean;0;1980;2976
+Central America & Caribbean;0;1981;3151
+Central America & Caribbean;0;1982;3398
+Central America & Caribbean;0;1983;5554
+Central America & Caribbean;0;1984;5112
+Central America & Caribbean;0;1985;2734
+Central America & Caribbean;0;1986;755
+Central America & Caribbean;0;1987;1214
+Central America & Caribbean;0;1988;739
+Central America & Caribbean;0;1989;452
+Central America & Caribbean;0;1990;406
+Central America & Caribbean;0;1991;714
+Central America & Caribbean;0;1992;112
+Central America & Caribbean;0;1994;184
+Central America & Caribbean;0;1995;81
+Central America & Caribbean;0;1996;88
+Central America & Caribbean;0;1997;73
+Central America & Caribbean;0;1998;0
+Central America & Caribbean;0;1999;6
+Central America & Caribbean;0;2000;11
+Central America & Caribbean;0;2001;2
+Central America & Caribbean;0;2002;0
+Central America & Caribbean;0;2003;5
+Central America & Caribbean;0;2004;38
+Central America & Caribbean;0;2005;1
+Central America & Caribbean;0;2006;7
+Central America & Caribbean;0;2007;2
+Central America & Caribbean;0;2008;0
+Central America & Caribbean;0;2009;3
+Central America & Caribbean;0;2010;0
+Central America & Caribbean;0;2011;2
+Central America & Caribbean;0;2012;2
+Central America & Caribbean;0;2013;9
+Central America & Caribbean;0;2014;5
+Central America & Caribbean;0;2015;0
+Central America & Caribbean;0;2016;9
+Central America & Caribbean;0;2017;4
+Central America & Caribbean;0;2018;9
+Central America & Caribbean;0;2019;6
+Central America & Caribbean;0;2020;7
+Central America & Caribbean;0;2021;2
 Central Asia;;1970;0
 Central Asia;;1971;0
 Central Asia;;1972;0
