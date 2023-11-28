@@ -1,12 +1,12 @@
 Entity;Code;Year;Proportionofprotectedforests
-Africa (UN);;2000;23.37
-Africa (UN);;2010;24.1
-Africa (UN);;2015;25.77
-Africa (UN);;2016;25.77
-Africa (UN);;2017;25.76
-Africa (UN);;2018;25.76
-Africa (UN);;2019;25.61
-Africa (UN);;2020;25.73
+Africa (UN);0;2000;23.37
+Africa (UN);0;2010;24.1
+Africa (UN);0;2015;25.77
+Africa (UN);0;2016;25.77
+Africa (UN);0;2017;25.76
+Africa (UN);0;2018;25.76
+Africa (UN);0;2019;25.61
+Africa (UN);0;2020;25.73
 Algeria;DZA;2000;6.08
 Algeria;DZA;2010;6.08
 Algeria;DZA;2015;6.08
@@ -40,14 +40,14 @@ Argentina;ARG;2017;6.38
 Argentina;ARG;2018;6.63
 Argentina;ARG;2019;6.63
 Argentina;ARG;2020;6.63
-Asia (UN);;2000;19.29
-Asia (UN);;2010;24.05
-Asia (UN);;2015;24.76
-Asia (UN);;2016;25.01
-Asia (UN);;2017;25.25
-Asia (UN);;2018;25.29
-Asia (UN);;2019;25.32
-Asia (UN);;2020;25.37
+Asia (UN);0;2000;19.29
+Asia (UN);0;2010;24.05
+Asia (UN);0;2015;24.76
+Asia (UN);0;2016;25.01
+Asia (UN);0;2017;25.25
+Asia (UN);0;2018;25.29
+Asia (UN);0;2019;25.32
+Asia (UN);0;2020;25.37
 Australia;AUS;2000;13.22
 Australia;AUS;2010;16.73
 Australia;AUS;2015;17.96
@@ -230,14 +230,14 @@ Central African Republic;CAF;2017;0.74
 Central African Republic;CAF;2018;0.74
 Central African Republic;CAF;2019;0.74
 Central African Republic;CAF;2020;0.74
-Central and Southern Asia (UN);;2000;18.49
-Central and Southern Asia (UN);;2010;23.06
-Central and Southern Asia (UN);;2015;24.34
-Central and Southern Asia (UN);;2016;24.54
-Central and Southern Asia (UN);;2017;24.66
-Central and Southern Asia (UN);;2018;24.72
-Central and Southern Asia (UN);;2019;24.74
-Central and Southern Asia (UN);;2020;24.86
+Central and Southern Asia (UN);0;2000;18.49
+Central and Southern Asia (UN);0;2010;23.06
+Central and Southern Asia (UN);0;2015;24.34
+Central and Southern Asia (UN);0;2016;24.54
+Central and Southern Asia (UN);0;2017;24.66
+Central and Southern Asia (UN);0;2018;24.72
+Central and Southern Asia (UN);0;2019;24.74
+Central and Southern Asia (UN);0;2020;24.86
 Chad;TCD;2000;35.49
 Chad;TCD;2010;35.45
 Chad;TCD;2015;35.45
@@ -364,14 +364,14 @@ Dominica;DMA;2017;44.7
 Dominica;DMA;2018;44.7
 Dominica;DMA;2019;44.7
 Dominica;DMA;2020;44.7
-Eastern and South-Eastern Asia (UN);;2000;18.84
-Eastern and South-Eastern Asia (UN);;2010;23.89
-Eastern and South-Eastern Asia (UN);;2015;24.43
-Eastern and South-Eastern Asia (UN);;2016;24.69
-Eastern and South-Eastern Asia (UN);;2017;24.97
-Eastern and South-Eastern Asia (UN);;2018;24.99
-Eastern and South-Eastern Asia (UN);;2019;25.02
-Eastern and South-Eastern Asia (UN);;2020;25.04
+Eastern and South-Eastern Asia (UN);0;2000;18.84
+Eastern and South-Eastern Asia (UN);0;2010;23.89
+Eastern and South-Eastern Asia (UN);0;2015;24.43
+Eastern and South-Eastern Asia (UN);0;2016;24.69
+Eastern and South-Eastern Asia (UN);0;2017;24.97
+Eastern and South-Eastern Asia (UN);0;2018;24.99
+Eastern and South-Eastern Asia (UN);0;2019;25.02
+Eastern and South-Eastern Asia (UN);0;2020;25.04
 Ecuador;ECU;2000;24.2
 Ecuador;ECU;2010;24.86
 Ecuador;ECU;2015;25.5
@@ -419,22 +419,22 @@ Eswatini;SWZ;2018;3.26
 Eswatini;SWZ;2019;4.68
 Eswatini;SWZ;2020;4.68
 Ethiopia;ETH;2018;35.26
-Europe (UN);;2000;3.05
-Europe (UN);;2010;3.91
-Europe (UN);;2015;4.37
-Europe (UN);;2016;4.47
-Europe (UN);;2017;4.48
-Europe (UN);;2018;4.49
-Europe (UN);;2019;4.5
-Europe (UN);;2020;4.51
-Europe and Northern America (UN);;2000;4.23
-Europe and Northern America (UN);;2010;5.95
-Europe and Northern America (UN);;2015;6.27
-Europe and Northern America (UN);;2016;6.45
-Europe and Northern America (UN);;2017;6.46
-Europe and Northern America (UN);;2018;6.46
-Europe and Northern America (UN);;2019;6.47
-Europe and Northern America (UN);;2020;6.47
+Europe (UN);0;2000;3.05
+Europe (UN);0;2010;3.91
+Europe (UN);0;2015;4.37
+Europe (UN);0;2016;4.47
+Europe (UN);0;2017;4.48
+Europe (UN);0;2018;4.49
+Europe (UN);0;2019;4.5
+Europe (UN);0;2020;4.51
+Europe and Northern America (UN);0;2000;4.23
+Europe and Northern America (UN);0;2010;5.95
+Europe and Northern America (UN);0;2015;6.27
+Europe and Northern America (UN);0;2016;6.45
+Europe and Northern America (UN);0;2017;6.46
+Europe and Northern America (UN);0;2018;6.46
+Europe and Northern America (UN);0;2019;6.47
+Europe and Northern America (UN);0;2020;6.47
 Faroe Islands;FRO;2000;0
 Faroe Islands;FRO;2010;0
 Faroe Islands;FRO;2015;0
@@ -690,14 +690,14 @@ Laos;LAO;2010;19.71
 Laos;LAO;2015;19.45
 Laos;LAO;2016;19.33
 Laos;LAO;2017;19.23
-Latin America and the Caribbean (UN);;2000;24.98
-Latin America and the Caribbean (UN);;2010;29.96
-Latin America and the Caribbean (UN);;2015;30.48
-Latin America and the Caribbean (UN);;2016;30.78
-Latin America and the Caribbean (UN);;2017;30.81
-Latin America and the Caribbean (UN);;2018;31.03
-Latin America and the Caribbean (UN);;2019;31.18
-Latin America and the Caribbean (UN);;2020;31.27
+Latin America and the Caribbean (UN);0;2000;24.98
+Latin America and the Caribbean (UN);0;2010;29.96
+Latin America and the Caribbean (UN);0;2015;30.48
+Latin America and the Caribbean (UN);0;2016;30.78
+Latin America and the Caribbean (UN);0;2017;30.81
+Latin America and the Caribbean (UN);0;2018;31.03
+Latin America and the Caribbean (UN);0;2019;31.18
+Latin America and the Caribbean (UN);0;2020;31.27
 Latvia;LVA;2000;16.51
 Latvia;LVA;2010;15.73
 Latvia;LVA;2015;16.05
@@ -706,14 +706,14 @@ Latvia;LVA;2017;16.51
 Latvia;LVA;2018;16.51
 Latvia;LVA;2019;16.51
 Latvia;LVA;2020;16.51
-Least Developed Countries (LDCs);;2000;25.88
-Least Developed Countries (LDCs);;2010;27.04
-Least Developed Countries (LDCs);;2015;29.23
-Least Developed Countries (LDCs);;2016;29.29
-Least Developed Countries (LDCs);;2017;29.29
-Least Developed Countries (LDCs);;2018;29.28
-Least Developed Countries (LDCs);;2019;29.09
-Least Developed Countries (LDCs);;2020;29.24
+Least Developed Countries (LDCs);0;2000;25.88
+Least Developed Countries (LDCs);0;2010;27.04
+Least Developed Countries (LDCs);0;2015;29.23
+Least Developed Countries (LDCs);0;2016;29.29
+Least Developed Countries (LDCs);0;2017;29.29
+Least Developed Countries (LDCs);0;2018;29.28
+Least Developed Countries (LDCs);0;2019;29.09
+Least Developed Countries (LDCs);0;2020;29.24
 Lebanon;LBN;2017;0.6
 Lesotho;LSO;2000;14.48
 Lesotho;LSO;2010;14.48
@@ -924,22 +924,22 @@ Nigeria;NGA;2017;12.88
 Nigeria;NGA;2018;12.88
 Nigeria;NGA;2019;12.88
 Nigeria;NGA;2020;12.88
-Northern Africa (UN);;2000;12.5
-Northern Africa (UN);;2010;18.74
-Northern Africa (UN);;2015;18.75
-Northern Africa (UN);;2016;18.75
-Northern Africa (UN);;2017;18.75
-Northern Africa (UN);;2018;18.75
-Northern Africa (UN);;2019;18.75
-Northern Africa (UN);;2020;18.75
-Northern America (UN);;2000;5.93
-Northern America (UN);;2010;8.89
-Northern America (UN);;2015;9.02
-Northern America (UN);;2016;9.32
-Northern America (UN);;2017;9.32
-Northern America (UN);;2018;9.32
-Northern America (UN);;2019;9.32
-Northern America (UN);;2020;9.32
+Northern Africa (UN);0;2000;12.5
+Northern Africa (UN);0;2010;18.74
+Northern Africa (UN);0;2015;18.75
+Northern Africa (UN);0;2016;18.75
+Northern Africa (UN);0;2017;18.75
+Northern Africa (UN);0;2018;18.75
+Northern Africa (UN);0;2019;18.75
+Northern Africa (UN);0;2020;18.75
+Northern America (UN);0;2000;5.93
+Northern America (UN);0;2010;8.89
+Northern America (UN);0;2015;9.02
+Northern America (UN);0;2016;9.32
+Northern America (UN);0;2017;9.32
+Northern America (UN);0;2018;9.32
+Northern America (UN);0;2019;9.32
+Northern America (UN);0;2020;9.32
 Norway;NOR;2000;1.3
 Norway;NOR;2010;3.54
 Norway;NOR;2015;4.28
@@ -948,14 +948,14 @@ Norway;NOR;2017;4.58
 Norway;NOR;2018;4.73
 Norway;NOR;2019;4.88
 Norway;NOR;2020;5.02
-Oceania (UN);;2000;12.45
-Oceania (UN);;2010;15.18
-Oceania (UN);;2015;16.04
-Oceania (UN);;2016;16.13
-Oceania (UN);;2017;16.13
-Oceania (UN);;2018;16.13
-Oceania (UN);;2019;16.13
-Oceania (UN);;2020;16.13
+Oceania (UN);0;2000;12.45
+Oceania (UN);0;2010;15.18
+Oceania (UN);0;2015;16.04
+Oceania (UN);0;2016;16.13
+Oceania (UN);0;2017;16.13
+Oceania (UN);0;2018;16.13
+Oceania (UN);0;2019;16.13
+Oceania (UN);0;2020;16.13
 Panama;PAN;2010;47.32
 Panama;PAN;2015;47.32
 Panama;PAN;2016;47.32
@@ -1033,14 +1033,14 @@ Rwanda;RWA;2017;78.15
 Rwanda;RWA;2018;78.15
 Rwanda;RWA;2019;78.15
 Rwanda;RWA;2020;78.15
-Saint Barthlemy;;2000;0
-Saint Barthlemy;;2010;0
-Saint Barthlemy;;2015;0
-Saint Barthlemy;;2016;0
-Saint Barthlemy;;2017;0
-Saint Barthlemy;;2018;0
-Saint Barthlemy;;2019;0
-Saint Barthlemy;;2020;0
+Saint Barthlemy;0;2000;0
+Saint Barthlemy;0;2010;0
+Saint Barthlemy;0;2015;0
+Saint Barthlemy;0;2016;0
+Saint Barthlemy;0;2017;0
+Saint Barthlemy;0;2018;0
+Saint Barthlemy;0;2019;0
+Saint Barthlemy;0;2020;0
 Saint Lucia;LCA;2000;44.82
 Saint Lucia;LCA;2010;44.82
 Saint Lucia;LCA;2015;44.82
@@ -1145,14 +1145,14 @@ Slovenia;SVN;2017;19.59
 Slovenia;SVN;2018;19.59
 Slovenia;SVN;2019;19.59
 Slovenia;SVN;2020;19.59
-Small Island Developing States (SIDS);;2000;6.06
-Small Island Developing States (SIDS);;2010;6.8
-Small Island Developing States (SIDS);;2015;7.78
-Small Island Developing States (SIDS);;2016;7.66
-Small Island Developing States (SIDS);;2017;7.66
-Small Island Developing States (SIDS);;2018;7.66
-Small Island Developing States (SIDS);;2019;7.66
-Small Island Developing States (SIDS);;2020;7.66
+Small Island Developing States (SIDS);0;2000;6.06
+Small Island Developing States (SIDS);0;2010;6.8
+Small Island Developing States (SIDS);0;2015;7.78
+Small Island Developing States (SIDS);0;2016;7.66
+Small Island Developing States (SIDS);0;2017;7.66
+Small Island Developing States (SIDS);0;2018;7.66
+Small Island Developing States (SIDS);0;2019;7.66
+Small Island Developing States (SIDS);0;2020;7.66
 Solomon Islands;SLB;2017;1.27
 South Africa;ZAF;2000;1.31
 South Africa;ZAF;2010;1.31
@@ -1182,14 +1182,14 @@ Sri Lanka;LKA;2017;58.49
 Sri Lanka;LKA;2018;58.64
 Sri Lanka;LKA;2019;58.74
 Sri Lanka;LKA;2020;59.11
-Sub-Saharan Africa (UN);;2000;23.88
-Sub-Saharan Africa (UN);;2010;24.35
-Sub-Saharan Africa (UN);;2015;26.1
-Sub-Saharan Africa (UN);;2016;26.1
-Sub-Saharan Africa (UN);;2017;26.1
-Sub-Saharan Africa (UN);;2018;26.09
-Sub-Saharan Africa (UN);;2019;25.93
-Sub-Saharan Africa (UN);;2020;26.06
+Sub-Saharan Africa (UN);0;2000;23.88
+Sub-Saharan Africa (UN);0;2010;24.35
+Sub-Saharan Africa (UN);0;2015;26.1
+Sub-Saharan Africa (UN);0;2016;26.1
+Sub-Saharan Africa (UN);0;2017;26.1
+Sub-Saharan Africa (UN);0;2018;26.09
+Sub-Saharan Africa (UN);0;2019;25.93
+Sub-Saharan Africa (UN);0;2020;26.06
 Sudan;SDN;2000;16.94
 Sudan;SDN;2010;24.51
 Sudan;SDN;2015;24.51
@@ -1318,14 +1318,14 @@ Vietnam;VNM;2017;15.23
 Vietnam;VNM;2018;15.33
 Vietnam;VNM;2019;15.41
 Vietnam;VNM;2020;15.49
-World;OWID_WRL;2000;14.12
-World;OWID_WRL;2010;16.81
-World;OWID_WRL;2015;17.48
-World;OWID_WRL;2016;17.66
-World;OWID_WRL;2017;17.7
-World;OWID_WRL;2018;17.75
-World;OWID_WRL;2019;17.76
-World;OWID_WRL;2020;17.81
+World;0;2000;14.12
+World;0;2010;16.81
+World;0;2015;17.48
+World;0;2016;17.66
+World;0;2017;17.7
+World;0;2018;17.75
+World;0;2019;17.76
+World;0;2020;17.81
 Yemen;YEM;2010;5.65
 Yemen;YEM;2015;5.65
 Yemen;YEM;2016;5.65
