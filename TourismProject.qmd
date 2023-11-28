@@ -112,6 +112,9 @@ The Cleaned Data set A Summary contains `r nbrows` number of columns and `r nbco
 <<<<<<< HEAD
 
 =======
+
+
+### Cleaned Data set A Summary to be shown in html rendering:
 ```{r}
 print(summary(Arrivals19vs20))|>
 knitr::kable()
@@ -153,6 +156,12 @@ AvgExpenditures19vs20v1 <- AvgExpenditures19vs20v1|>
   rename(Country=Entity)
 ```
 
+### Data set B cleaning task 4 : Mutating the last 2 columns to be recognised as numerical values
+```{r}
+AvgExpenditures19vs20v1 <- AvgExpenditures19vs20v1 |>
+  mutate_at(vars("2019", "2020"), as.numeric)
+```
+
 ### Cleaned Data set B Summary
 
 ```{r}
@@ -160,6 +169,9 @@ print(names(AvgExpenditures19vs20v1))
 print(dim(AvgExpenditures19vs20v1))
 print(summary(AvgExpenditures19vs20v1))
 ```
+
+### Cleaned Data set B Summary to be shown in html rendering :
+
 ```{r}
 print(summary(AvgExpenditures19vs20v1))|>
 knitr::kable()
@@ -207,6 +219,9 @@ print(names(FoodExpenditures19vs20v1))
 print(dim(FoodExpenditures19vs20v1))
 print(summary(FoodExpenditures19vs20v1))
 ```
+
+### Cleaned Data set C Summary to be shown in html rendering :
+
 ```{r}
 print(summary(FoodExpenditures19vs20v1))|>
 knitr::kable()
@@ -267,6 +282,9 @@ print(names(Forest19vs20v1))
 print(dim(Forest19vs20v1))
 print(summary(Forest19vs20v1))
 ```
+
+### Cleaned Data set C Summary to be shown in html rendering
+
 ```{r}
 print(summary(Forest19vs20v1))|>
 knitr::kable()
@@ -306,6 +324,8 @@ print(names(GDP19vs20))
 print(dim(GDP19vs20))
 print(summary(GDP19vs20))
 ```
+
+### Cleaned Data set E Summary to be shown in html rendering :
 ```{r}
 print(summary(GDP19vs20))|>
 knitr::kable()
@@ -361,6 +381,8 @@ print(names(Gini19vs20v1))
 print(dim(Gini19vs20v1))
 print(summary(Gini19vs20v1))
 ```
+
+### Cleaned Data set F Summary to be shown in html rendering
 ```{r}
 print(summary(Gini19vs20v1))|>
 knitr::kable()
@@ -414,6 +436,8 @@ print(names(Happy19vs20v1))
 print(dim(Happy19vs20v1))
 print(summary(Happy19vs20v1))
 ```
+
+### Cleaned Data set G Summary to be shown in html rendering :
 ```{r}
 print(summary(Happy19vs20v1))|>
 knitr::kable()
@@ -480,6 +504,7 @@ print(dim(TerrorDeath19vs20v1))
 print(summary(TerrorDeath19vs20v1))
 ```
 
+### Cleaned Data set H Summary to be shown in html rendering:
 
 ```{r}
 print(summary(TerrorDeath19vs20v1))|>
