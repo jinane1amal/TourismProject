@@ -336,6 +336,33 @@ print(summary(Happy19vs20v1))
 ```
 
 ## H) Terrorism Attacks
+### Data set H cleaning task 1 : Focus (2019 VS 2020)
+
+```{r}
+TerrorDeath19vs20 <- TerrorDeath |>
+  filter(Year %in% c(2019, 2020))
+```
+### Data set H cleaning task 2 : Get rid 0's into NA
+
+```{r}
+TerrorDeath19vs20 <- TerrorDeath19vs20|>
+ mutate_all(~ifelse(. == 0, NA, .))
+```
+
+### Data set H cleaning task 3 : Get rid of NA lines
+
+```{r}
+TerrorDeath19vs20 <- TerrorDeath19vs20|>
+  filter(!is.na(Code))
+```
+
+### Data set H cleaning task 4 : Since previous command changes the values into NA's we should now revert the NA'S of the last column to 0 (mening no terrorist attack)
+
+```{r}
+TerrorDeath19vs20[is.na(TerrorDeath19vs20[, ncol(TerrorDeath19vs20)]), ncol(TerrorDeath19vs20)] <- 0
+
+```
+
 
 # V. Description of our Research Question :
 
