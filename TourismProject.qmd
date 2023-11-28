@@ -73,7 +73,8 @@ Even if their main mission is, as they said themselves, to provide a wide array 
 
 # IV. Description of our data
 
-## A) Number of arrivals
+## A) Number of arrivals: 
+#### Tourist arrivals, the primary dependent variable, stand as the pivotal metric impacted by chosen independent variables, shaping a country's overall attractiveness to tourism. Understanding and optimizing these influential factors can significantly influence the influx of visitors.
 
 ### Data set A cleaning task 1 : Focus (2019 VS 2020)
 
@@ -116,6 +117,7 @@ print(summary(Arrivals19vs20))|>
 knitr::kable()
 ```
 >>>>>>> 691925d3e6d4f911657d46601bd0598b97b931e0
+
 # Get number of rows and columns
 
 ```{r}
@@ -126,7 +128,8 @@ nbcol <- ncol(Arrivals19vs20)
 The Cleaned Data set A Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
 
-## B) Average Expenditures
+## B) Average Expenditures:
+#### Average expenditures, as the second dependent variable, are intricately influenced by factors like cultural offerings and safety measures, shaping a country's overall appeal to tourism. These variables contribute to the financial decisions of tourists, impacting the level of spending and economic contributions within the destination.
 
 ### Data set B cleaning task 1 : Focus (2019 VS 2020)
 
@@ -171,7 +174,9 @@ nbcol <- ncol(AvgExpenditures19vs20v1)
 
 The Cleaned Data set B Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
-## C) Food Expenditures
+## C) Food Expenditures:
+
+#### Food expenditures, as an independent variable, directly impact a country's tourism attractiveness by influencing the accessibility and affordability of diverse culinary experiences, shaping the overall appeal for travelers. 
 
 ### Data set C cleaning task 1 : Focus (2019 VS 2020)
 
@@ -216,7 +221,9 @@ nbcol <- ncol(FoodExpenditures19vs20v1)
 
 The Cleaned Data set C Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
-## D) Forest
+## D) Forest:
+
+#### The extent of protected forest surface in a country serves as an independent variable influencing its tourism attractiveness, signifying environmental conservation and offering unique natural attractions. 
 
 ### Data set D cleaning task 1 : change 0s into NA
 
@@ -274,7 +281,9 @@ nbcol <- ncol(Forest19vs20v1)
 
 The Cleaned Data set D Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
-## E) Gross Domestic Product per capita
+## E) Gross Domestic Product per capita :
+
+#### High GDP signifies Economic prosperity which often translates into improved amenities, accessibility, and diverse attractions, making the destination more appealing to tourists.
 
 ### Data set E cleaning task 1 : Focus (2019 VS 2020)
 
@@ -311,7 +320,9 @@ nbcol <- ncol(GDP19vs20)
 
 The Cleaned Data set E Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
-## F) GINI Index
+## F) GINI Index :
+
+#### The Gini Index measures income inequality within a country, with higher values indicating greater inequality. High Gini Index scores may negatively impact a country's attractiveness to tourism, as economic disparities can affect overall stability and inclusivity, influencing visitors' perceptions and experiences.
 
 ### Data set F cleaning task 1 : Focus (2019 VS 2020)
 
@@ -341,6 +352,8 @@ Gini19vs20v1 <- Gini19vs20v1|>
   rename(Country=Entity)
 ```
 
+
+
 ### Cleaned Data set F Summary
 
 ```{r}
@@ -362,7 +375,9 @@ nbcol <- ncol(Gini19vs20v1)
 
 The Cleaned Data set F Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
-## G) Happiness Ladder
+## G) Happiness Ladder :
+
+#### The Happiness Ladder, a measure of a country's overall well-being and life satisfaction, serves as a pivotal independent variable influencing its attractiveness to tourism. Higher rankings on the Happiness Ladder often correlate with a positive perception, encouraging tourists to seek enriching and joyful experiences in those destinations.
 
 ### Data set G cleaning task 1 : Focus (2019 VS 2020)
 
@@ -414,6 +429,9 @@ nbcol <- ncol(Happy19vs20v1)
 The Cleaned Data set G Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
 
 ## H) Terrorism Attacks
+
+#### Terrorist attacks act as an independent variable negatively impacting a country's attractiveness to tourism, creating safety concerns and deterring potential visitors. The frequency and severity of such incidents significantly influence the perceived security of a destination, shaping tourists' decisions and preferences.
+
 ### Data set H cleaning task 1 : Focus (2019 VS 2020)
 
 ```{r}
