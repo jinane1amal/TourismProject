@@ -41,7 +41,36 @@ You can have access tot the source of our data by clicking on the name of the va
 -   [GDP per capita](https://ourworldindata.org/grapher/gdp-per-capita-worldbank?tab=table)
 -   [Terrorism death](https://ourworldindata.org/grapher/terrorism-deaths)
    
-Click [here](https://github.com/jinane1amal/DataRproject.git) to access to our GitHub project.
+Click [here](https://github.com/jinane1amal/DataRproject.git) to access to our GitHub project.   
+   
+# III. Description of our sources
+
+To get our data, we decide to use two different data banks. 
+
+First, we have used is the research publication called “Our World in Data”. Founded by the economist Max Roser in 2011, “Our World in Data” is working in collaboration with thousands of researchers all around the world to try to answer and face the hardest problem our world is facing: poverty, diseases, hunger, climate change, war etc.     
+ “Our World in Data” uses interactive charts and maps to illustrate the work of the researchers. 
+In this website, we found the data for the following topics :     
+     
+-	The food expenditures per person from 2017 to 2021 
+-	The self-reported life satisfaction from 2011 to 2022.
+-	The income inequalities measured by the Gini coefficient from 1967 to 2021
+-	The share of forest area within protected areas from 2000 to 2020
+-	The international tourist expenditures within the country they visit from 1995 to 2021
+-	The terrorism deaths from 1970 to 2021
+-	The GDP per capita from 1990 to 2021
+
+All this data and their variables are going to be explained in the next part. Note that we are not going to keep those periods, we will deal with this issue later, during the data cleaning part.       
+   
+We also went to the Data world bank to find our principal data set : the number of arrivals. 
+The World Bank Group, established in 1944 along the International Monetary Fund at the Bretton Woods Conference, is one of the world’s largest sources of funding and knowledge for developing countries. Its five institutions share a commitment to reducing poverty, increasing shared prosperity, and promoting sustainable development. This group is dividing in 5 institutions:    
+
+-	The international bank for reconstruction    
+-	The international development association    
+-	The international finance corporation    
+-	The multilateral investment guarantee agency    
+-	The International Centre for Settlement of Investment Disputes.  
+   
+Even if their main mission is, as they said themselves, to provide a wide array of financial products and technical assistance but also to help countries share, they also produce data that can be find in their site, where there is a whole page dedicated to a whole free collection of data. 
 
 
 
