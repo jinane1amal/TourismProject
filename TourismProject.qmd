@@ -1,0 +1,77 @@
+---
+title: "Tourism project"
+author: "Lounès AÏT KARROU & Jinane AMAL"
+format: html
+editor: visual
+---
+```{r}
+#| message: false
+library(here)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(knitr)
+theme_set(theme_bw())
+here::i_am("TourismProject.Rproj")
+```
+
+# I. Loading the data
+
+```{r}
+Arrivals<-read.csv("Datas/arrivals.csv",sep=";")
+AvgExpenditures<-read.csv("Datas/avexpinttourists.csv",sep=";")
+FoodExpenditures<-read.csv("Datas/foodexp.csv",sep=";")
+GDP<-read.csv("Datas/gdppercap.csv",sep=";")
+Gini<-read.csv("Datas/gini.csv",sep=";")
+Happy<-read.csv("Datas/happinessladder.csv",sep=";")
+TerrorDeath<-read.csv("Datas/terrorism-deaths.csv",sep=";")
+Forest<-read.csv("Datas/propofprotectedforests.csv",sep=";")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
