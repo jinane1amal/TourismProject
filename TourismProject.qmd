@@ -116,3 +116,227 @@ print(summary(Arrivals19vs20))|>
 knitr::kable()
 ```
 >>>>>>> 691925d3e6d4f911657d46601bd0598b97b931e0
+# Get number of rows and columns
+
+```{r}
+nbrows <- nrow(Arrivals19vs20 %>% distinct(Country))
+nbcol <- ncol(Arrivals19vs20)
+```
+
+The Cleaned Data set A Summary contains `r nbrows` number of columns and `r nbcol` number of rows.
+
+
+## B) Average Expenditures
+
+### Data set B cleaning task 1 : Focus (2019 VS 2020)
+
+```{r}
+
+AvgExpenditures19vs20 <- AvgExpenditures|>
+  filter(Year %in% c(2019, 2020))
+```
+
+### Data set B cleaning task 2 : Pivoting
+
+```{r}
+AvgExpenditures19vs20v1 <- AvgExpenditures19vs20|>
+   pivot_wider(names_from= Year, values_from=Inbound_Tourism_Expenditure_adjusted)
+```
+
+### Data set B cleaning task 3 : Renaming the first column
+
+```{r}
+AvgExpenditures19vs20v1 <- AvgExpenditures19vs20v1|>
+  rename(Country=Entity)
+```
+
+### Cleaned Data set B Summary
+
+```{r}
+print(names(AvgExpenditures19vs20v1))
+print(dim(AvgExpenditures19vs20v1))
+print(summary(AvgExpenditures19vs20v1))
+```
+
+## C) Food Expenditures
+
+### Data set C cleaning task 1 : Focus (2019 VS 2020)
+
+```{r}
+FoodExpenditures19vs20<- FoodExpenditures |>
+  filter(Year %in% c(2019, 2020))
+```
+
+### Data set C cleaning task 2: Pivoting
+
+```{r}
+FoodExpenditures19vs20v1<- FoodExpenditures19vs20 |>
+    pivot_wider(names_from= Year, values_from=Total.food.expenditure)
+  
+```
+
+### Data set C cleaning task 3 : Renaming the first column
+
+```{r}
+FoodExpenditures19vs20v1 <- FoodExpenditures19vs20v1|>
+  rename(Country=Entity)
+```
+
+### Cleaned Data set C Summary
+
+```{r}
+print(names(FoodExpenditures19vs20v1))
+print(dim(FoodExpenditures19vs20v1))
+print(summary(FoodExpenditures19vs20v1))
+```
+
+## D) Forest
+
+### Data set D cleaning task 1 : change 0s into NA
+
+```{r}
+Forest <- Forest|>
+ mutate_all(~ifelse(. == 0, NA, .))
+```
+
+### Data set D cleaning task 2 : Get rid of NA lines
+
+```{r}
+Forest <- Forest|>
+  filter(!is.na(Code))
+```
+
+### Data set D cleaning task 3 : Focus (2019 VS 2020)
+
+```{r}
+Forest19vs20 <- Forest |>
+  filter(Year %in% c(2019, 2020))
+```
+
+### Data set D cleaning task 4 : pivoting
+
+```{r}
+Forest19vs20v1 <- Forest19vs20 |>
+    pivot_wider(names_from= Year, values_from= Proportionofprotectedforests)
+```
+
+### Data set C cleaning task 5 : Renaming the first column
+
+```{r}
+Forest19vs20v1 <- Forest19vs20v1|>
+  rename(Country=Entity)
+```
+
+### Cleaned Data set D Summary
+
+```{r}
+print(names(Forest19vs20v1))
+print(dim(Forest19vs20v1))
+print(summary(Forest19vs20v1))
+```
+
+## E) Gross Domestic Product per capita
+
+### Data set E cleaning task 1 : Focus (2019 VS 2020)
+
+```{r}
+GDP19vs20 <- GDP |>
+  select(1:2, 64:65)
+```
+
+### Data set E cleaning task 2 : Renaming all 4 columns
+
+```{r}
+GDP19vs20 <- GDP19vs20|>
+  rename(Country= Country.Name, Code= Country.Code, "2019" = X2019 , "2020" = X2020)
+```
+
+### Cleaned Data set E Summary
+
+```{r}
+print(names(GDP19vs20))
+print(dim(GDP19vs20))
+print(summary(GDP19vs20))
+```
+
+## F) GINI Index
+
+### Data set F cleaning task 1 : Focus (2019 VS 2020)
+
+```{r}
+Gini19vs20 <- Gini |>
+  filter(Year %in% c(2019, 2020))
+```
+
+### Data set F cleaning task 2 : Getting rid of the additional lines for urban or rural region for which we already have an average gini coefficient
+
+```{r}
+Gini19vs20 <- Gini19vs20|>
+  filter(!grepl(" - (rural|urban)$", Entity))
+```
+
+### Data set F cleaning task 3 : pivoting
+
+```{r}
+Gini19vs20v1 <- Gini19vs20 |>
+    pivot_wider(names_from= Year, values_from= Gini.coefficient)
+```
+
+### Data set C cleaning task 4 : Renaming the first column
+
+```{r}
+Gini19vs20v1 <- Gini19vs20v1|>
+  rename(Country=Entity)
+```
+
+### Cleaned Data set F Summary
+
+```{r}
+print(names(Gini19vs20v1))
+print(dim(Gini19vs20v1))
+print(summary(Gini19vs20v1))
+```
+
+## G) Happiness Ladder
+
+### Data set G cleaning task 1 : Focus (2019 VS 2020)
+
+```{r}
+Happy19vs20 <- Happy |>
+  filter(Year %in% c(2019, 2020))
+```
+
+### Data set G cleaning task 2 : pivoting
+
+```{r}
+Happy19vs20v1 <- Happy19vs20 |>
+    pivot_wider(names_from= Year, values_from= Cantril.ladder.score)
+```
+
+### Data set G cleaning task 3 : Renaming the first column
+
+```{r}
+Happy19vs20v1 <- Happy19vs20v1|>
+  rename(Country=Entity)
+```
+
+### Data set G cleaning task 4 : Switching the order of the last 2 columns representing our focused years of study
+
+```{r}
+Happy19vs20v1 <- Happy19vs20v1|>
+  select(-"2019", -"2020", "2019", "2020")
+```
+
+### Cleaned Data set G Summary
+
+```{r}
+print(names(Happy19vs20v1))
+print(dim(Happy19vs20v1))
+print(summary(Happy19vs20v1))
+```
+
+## H) Terrorism Attacks
+
+# V. Description of our Research Question :
+
+## "What makes a country more attractive to tourists ?"
