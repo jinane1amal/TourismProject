@@ -367,3 +367,16 @@ TerrorDeath19vs20[is.na(TerrorDeath19vs20[, ncol(TerrorDeath19vs20)]), ncol(Terr
 # V. Description of our Research Question :
 
 ## "What makes a country more attractive to tourists ?"
+
+Travel holds profound importance in our lives, extending far beyond the mere act of moving from one place to another.
+It serves as a gateway to diverse cultures, broadening our perspectives and fostering a deeper understanding of the world.
+The importance of travel lies not only in the personal enrichment it offers but also in the role it plays in showcasing a country's distinctive charm. 
+Every nation becomes a storyteller, enticing visitors with its rich history, cultural treasures, and breathtaking landscapes. 
+Tourism becomes a bridge between cultures, a means to celebrate diversity and foster global understanding. As we explore different corners of the world, we contribute to a shared narrative of interconnectedness, where each country's unique appeal adds vibrancy to the collective tapestry of global tourism.
+Therefore, understanding the factors that make a destination appealing becomes a fascinating research endeavor. 
+As we embark on this research trail, the pivotal question arises: "What makes a country more attractive to tourists?" 
+This question will focus on a comparison study between 2 years 2019 & 2020 :
+2019 which will represent the initial tourism trends before the pandemic and 2020 will show us how the covid pandemic impacted these tourism trends through the evolution of the chosen variables 
+This query seeks to unravel the distinct elements that shape a nation's allure, delving into cultural, environmental, infrastructural and economy oriented facets that draw visitors. By exploring this question, we aim to not only enrich our comprehension of travel dynamics but also contribute valuable insights to the ongoing dialogue on global tourism trends.
+In evaluating a country's tourism success, we have opted to employ a dual-variable approach, focusing on the number of tourist arrivals and their average expenditure during visits. The number of arrivals serves as a primary indicator, reflecting the appeal and popularity of a destination, while average expenditure provides insights into the economic impact of tourism. To understand the influencing factors, we consider various variables. Gross Domestic Product (GDP) reflects the economic strength of a nation, potentially correlating with tourism appeal. Gini coefficient measures income inequality, influencing the distribution of tourist spending. The Happiness Ladder index gauges the overall well-being of a country's population, potentially affecting its attractiveness to visitors. The proportion of protected forests contribute to environmental considerations, influencing sustainable tourism. We also took the food expenditures as another indicator of the affordability experiencing a country's culinary traditions. Lastly, we chose as another variable the number of terrorist attacks per country reflecting the potential danger tourists will face if they visit a country .
+
