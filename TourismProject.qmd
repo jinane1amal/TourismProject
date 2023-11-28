@@ -4,6 +4,7 @@ author: "Lounès AÏT KARROU & Jinane AMAL"
 format: html
 editor: visual
 ---
+
 ```{r}
 #| message: false
 library(here)
@@ -32,7 +33,7 @@ Forest<-read.csv("Datas/propofprotectedforests.csv",sep=";")
 
 You can have access tot the source of our data by clicking on the name of the variable :
 
--   [Average expenditures by tourist](https://ourworldindata.org/grapher/average-expenditures-of-international-tourists-domestically?tab=table)   
+-   [Average expenditures by tourist](https://ourworldindata.org/grapher/average-expenditures-of-international-tourists-domestically?tab=table)\
 -   [Gross Domestic Product per capita](https://ourworldindata.org/economic-growth#all-charts)
 -   [Gini Coefficient](https://ourworldindata.org/grapher/economic-inequality-gini-index)
 -   [Number of arrivals](https://data.worldbank.org/indicator/ST.INT.ARVL?end=2020&most_recent_year_desc=false&start=2020&view=bar)
@@ -40,81 +41,78 @@ You can have access tot the source of our data by clicking on the name of the va
 -   [Food expenditure](https://ourworldindata.org/grapher/food-expenditure-per-person-per-year?tab=table)
 -   [GDP per capita](https://ourworldindata.org/grapher/gdp-per-capita-worldbank?tab=table)
 -   [Terrorism death](https://ourworldindata.org/grapher/terrorism-deaths)
-   
-Click [here](https://github.com/jinane1amal/DataRproject.git) to access to our GitHub project.   
-   
+
+Click [here](https://github.com/jinane1amal/DataRproject.git) to access to our GitHub project.
+
 # III. Description of our sources
 
-To get our data, we decide to use two different data banks. 
+To get our data, we decide to use two different data banks.
 
-First, we have used is the research publication called “Our World in Data”. Founded by the economist Max Roser in 2011, “Our World in Data” is working in collaboration with thousands of researchers all around the world to try to answer and face the hardest problem our world is facing: poverty, diseases, hunger, climate change, war etc.     
- “Our World in Data” uses interactive charts and maps to illustrate the work of the researchers. 
-In this website, we found the data for the following topics :     
-     
--	The food expenditures per person from 2017 to 2021 
--	The self-reported life satisfaction from 2011 to 2022.
--	The income inequalities measured by the Gini coefficient from 1967 to 2021
--	The share of forest area within protected areas from 2000 to 2020
--	The international tourist expenditures within the country they visit from 1995 to 2021
--	The terrorism deaths from 1970 to 2021
--	The GDP per capita from 1990 to 2021
+First, we have used is the research publication called "Our World in Data". Founded by the economist Max Roser in 2011, "Our World in Data" is working in collaboration with thousands of researchers all around the world to try to answer and face the hardest problem our world is facing: poverty, diseases, hunger, climate change, war etc.\
+"Our World in Data" uses interactive charts and maps to illustrate the work of the researchers. In this website, we found the data for the following topics :
 
-All this data and their variables are going to be explained in the next part. Note that we are not going to keep those periods, we will deal with this issue later, during the data cleaning part.       
-   
-We also went to the Data world bank to find our principal data set : the number of arrivals. 
-The World Bank Group, established in 1944 along the International Monetary Fund at the Bretton Woods Conference, is one of the world’s largest sources of funding and knowledge for developing countries. Its five institutions share a commitment to reducing poverty, increasing shared prosperity, and promoting sustainable development. This group is dividing in 5 institutions:    
+-   The food expenditures per person from 2017 to 2021
+-   The self-reported life satisfaction from 2011 to 2022.
+-   The income inequalities measured by the Gini coefficient from 1967 to 2021
+-   The share of forest area within protected areas from 2000 to 2020
+-   The international tourist expenditures within the country they visit from 1995 to 2021
+-   The terrorism deaths from 1970 to 2021
+-   The GDP per capita from 1990 to 2021
 
--	The international bank for reconstruction    
--	The international development association    
--	The international finance corporation    
--	The multilateral investment guarantee agency    
--	The International Centre for Settlement of Investment Disputes.  
-   
-Even if their main mission is, as they said themselves, to provide a wide array of financial products and technical assistance but also to help countries share, they also produce data that can be find in their site, where there is a whole page dedicated to a whole free collection of data. 
+All this data and their variables are going to be explained in the next part. Note that we are not going to keep those periods, we will deal with this issue later, during the data cleaning part.
 
+We also went to the Data world bank to find our principal data set : the number of arrivals. The World Bank Group, established in 1944 along the International Monetary Fund at the Bretton Woods Conference, is one of the world's largest sources of funding and knowledge for developing countries. Its five institutions share a commitment to reducing poverty, increasing shared prosperity, and promoting sustainable development. This group is dividing in 5 institutions:
 
+-   The international bank for reconstruction\
+-   The international development association\
+-   The international finance corporation\
+-   The multilateral investment guarantee agency\
+-   The International Centre for Settlement of Investment Disputes.
 
+Even if their main mission is, as they said themselves, to provide a wide array of financial products and technical assistance but also to help countries share, they also produce data that can be find in their site, where there is a whole page dedicated to a whole free collection of data.
 
+# IV. Description of our data
 
+## A) Number of arrivals
 
+### Data set A cleaning task 1 : Focus (2019 VS 2020)
 
+```{r}
+Arrivals19vs20 <- Arrivals |>
+  select(1:2, 64:65)
+```
 
+### Data set A cleaning task 2 : alphabetical order
 
+```{r}
+Arrivals19vs20 <- Arrivals19vs20 |>
+  arrange(Country.Name)
+```
 
+### Data set A cleaning task 3 : Renaming all 4 columns
 
+```{r}
+Arrivals19vs20 <- Arrivals19vs20|>
+  rename(Country=Country.Name, Code= Country.Code, "2019" = X2019 , "2020" = X2020)
+```
 
+### Cleaned Data set A Summary
 
+# Get number of rows and columns
 
+```{r}
+nbrows <- nrow(Arrivals19vs20 %>% distinct(Country))
+nbcol <- ncol(Arrivals19vs20)
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The Cleaned Data set A Summary contains `r nbrows` number of columns and `r nbcol` number of rows
 
 
+<<<<<<< HEAD
 
-
-
-
-
-
-
-
-
+=======
+```{r}
+print(summary(Arrivals19vs20))|>
+knitr::kable()
+```
+>>>>>>> 691925d3e6d4f911657d46601bd0598b97b931e0
