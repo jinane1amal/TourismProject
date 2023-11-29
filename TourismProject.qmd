@@ -42,7 +42,7 @@ You can have access tot the source of our data by clicking on the name of the va
 -   [GDP per capita](https://ourworldindata.org/grapher/gdp-per-capita-worldbank?tab=table)
 -   [Terrorism death](https://ourworldindata.org/grapher/terrorism-deaths)
 
-Click [here](https://github.com/jinane1amal/DataRproject.git) to access to our GitHub project.
+Click [here](https://github.com/jinane1amal/TourismProject.git) to access to our GitHub project.
 
 # III. Description of our sources
 
