@@ -31,7 +31,7 @@ Forest<-read.csv("Datas/propofprotectedforests.csv",sep=";")
 
 # II. Sources and GitHub
 
-You can have access tot the source of our data by clicking on the name of the variable :
+You can have access to the source of our data by clicking on the name of the variable :
 
 -   [Average expenditures by tourist](https://ourworldindata.org/grapher/average-expenditures-of-international-tourists-domestically?tab=table)\
 -   [Gross Domestic Product per capita](https://ourworldindata.org/economic-growth#all-charts)
