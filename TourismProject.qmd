@@ -549,10 +549,11 @@ Now we can, using the ggplot2 library, have the graphical representation :
 ```{r}
 ggplot(datalong, aes(x = Country, y = Values)) +
   geom_bar(stat = "identity", position = "dodge") +
-  facet_wrap(~Years) +
+  facet_wrap(~Years, ncol=1) +
   labs(title = "Numbers of arrivals in each country in 2019 and 2020",
        x = "Countries",
-       y = "Number of arrivals")
+       y = "Number of arrivals") +
+  theme(axis.text.x = element_text(size = 2, angle = 90))
 ```
 
 
