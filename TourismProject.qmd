@@ -558,6 +558,24 @@ ggplot(datalong, aes(x = Country, y = Values)) +
 
 
 
+# V. Linear regression
+
+In this section, we want to study the impact of all the variables on our main variables by using a linear regression. To do so, we will first focus on the impact in 2019 and after that in 2020.   
+   
+We decided to merge our tables using the inner_joint function, joining by the country and the code so we can have the same countries for all the tables.  
+Noticed that, due to the numerous number of N.a on the Gini table, we decided to exclude this variable in our study.    
+    
+Before doing the linear regression we merge our data set using the following code :
+
+```{r}
+TabA<-inner_join(Arrivals19vs20,AvgExpenditures19vs20v1,by=c('Code','Country'),suffix=c('_arrivals','_avg'))
+TabB<-inner_join(FoodExpenditures19vs20v1,Forest19vs20v1,by=c('Code','Country'),suffix=c('_food','_forest'))
+TabC<-inner_join(GDP19vs20,Happy19vs20v1,by=c('Code','Country'),suffix=c('gdp','_happy') )
+TabD<-inner_join(TabA,TabB,by=c('Code','Country'))
+Tab <- inner_join(TabD,TabC,by=c('Code','Country'))
+print(Tab)|>knitr::kable()
+```
+
 
 
 
