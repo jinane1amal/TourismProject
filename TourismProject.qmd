@@ -581,6 +581,10 @@ reg1 <- lm (Tab$'2019_arrivals'~ Tab$'2019_avg'+ Tab$'2019_food' + Tab$'2019_for
 summary(reg1)
 ```
 
+```{r}
+reg2 <- lm (Tab$'2020_arrivals'~ Tab$'2020_avg'+ Tab$'2020_food' + Tab$'2020_forest' + Tab$'2020_happy' + Tab$'2020gdp' )
+summary(reg2)
+```
 
 
 
