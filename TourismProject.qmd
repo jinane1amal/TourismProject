@@ -576,6 +576,10 @@ Tab <- inner_join(TabD,TabC,by=c('Code','Country'))
 print(Tab)|>knitr::kable()
 ```
 
+```{r}
+reg1 <- lm (Tab$'2019_arrivals'~ Tab$'2019_avg'+ Tab$'2019_food' + Tab$'2019_forest' + Tab$'2019_happy' + Tab$'2019gdp' )
+summary(reg1)
+```
 
 
 
