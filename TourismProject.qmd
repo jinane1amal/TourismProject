@@ -13,6 +13,7 @@ library(tidyr)
 library(ggplot2)
 library(knitr)
 library(corrplot)
+library(car)
 theme_set(theme_bw())
 here::i_am("TourismProject.Rproj")
 ```
@@ -622,13 +623,26 @@ Once again, the only significant variable is `2020_arrivals`.
 
 However, one should pay attention to the value of our adjusted $R^2$. In fact, in both cases, $R^2$ is not high enough (respectively $0.382$ and $0.283$). Thus, maybe this linear regression with thoses explanatory variable is not the best, maybe the unsignificant variable are downgrading the quality of our model, suggesting that those variables may not explain the number of arrivals in a country.  
 
+# VIII. Durbin Watson Test: 
+
+```{r}
+durbinWatsonTest (reg1)
+durbinWatsonTest (reg2)
+```
+
+# IX. Final Scatter plots: 
 
 
+```{r}
+scatterplot(Tab$'2019_arrivals'~ Tab$'2019_avg', data=Tab) 
+```
 
 
+```{r}
+scatterplot(Tab$'2020_arrivals'~ Tab$'2020_avg', data=Tab) 
+```
 
-
-
+# X. Conclusion : 
 
 
 
