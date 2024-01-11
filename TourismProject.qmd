@@ -12,6 +12,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(knitr)
+library(corrplot)
 theme_set(theme_bw())
 here::i_am("TourismProject.Rproj")
 ```
@@ -540,6 +541,7 @@ In evaluating a country's tourism success, we are focusing on the number of tour
 # VI. Graphical representation of the main variable
 
 To have a proper representation of our main target variable, we will first transform our data into a long data, to have a column for the two different years. 
+
 ```{r}
 datalong<-gather(Arrivals19vs20,key="Years",value="Values",-Country, -Code)
 ```
@@ -555,17 +557,11 @@ ggplot(datalong, aes(x = Country, y = Values)) +
        y = "Number of arrivals") +
   theme(axis.text.x = element_text(size = 2, angle = 90))
 ```
+# V. Merged Data set:
 
-
-
-# V. Linear regression
-
-In this section, we want to study the impact of all the variables on our main variables by using a linear regression. To do so, we will first focus on the impact in 2019 and after that in 2020.   
-   
+Before providing the correlation matrix and the linear regression, we merge our data set using the following code :
 We decided to merge our tables using the inner_joint function, joining by the country and the code so we can have the same countries for all the tables.  
-Noticed that, due to the numerous number of N.a on the Gini table, we decided to exclude this variable in our study.    
-    
-Before doing the linear regression we merge our data set using the following code :
+Noticed that, due to the numerous number of N.a on the Gini table, we decided to exclude this variable in our study. 
 
 ```{r}
 TabA<-inner_join(Arrivals19vs20,AvgExpenditures19vs20v1,by=c('Code','Country'),suffix=c('_arrivals','_avg'))
@@ -576,6 +572,30 @@ Tab <- inner_join(TabD,TabC,by=c('Code','Country'))
 print(Tab)|>knitr::kable()
 ```
 
+# VI. Correlation Matrix:
+
+In this section, we want to quantify the strength of linear relationships between the variables we kept for our following regression through correlation matrices for the two comparison years 2019 vs 2020 .
+
+$$ Focus\ Year\ : 2019 $$
+```{r}
+corr = cor(subset(Tab, select = c(`2019_arrivals`,`2019_avg`,`2019_food`, `2019_forest`,`2019_happy`,`2019gdp`)))
+corrplot(corr, type = "upper", method = "color" , tl.col = "black") 
+```
+We notice two important things for year 2019:
+-First: 3 of the explanatory variables are positively correlated to each other: food, happiness, and the gdp indicators.
+-Second: The average expenditure indicator is the only indicator which we can't determine its correlation to other variables  
+
+$$ Focus\ Year\ : 2020 $$
+```{r}
+corr = cor(subset(Tab, select = c(`2020_arrivals`,`2020_avg`,`2020_food`, `2020_forest`,`2020_happy`,`2020gdp`)))
+corrplot(corr, type = "upper", method = "color" , tl.col = "black") 
+```
+We notice that for year 2020: The obtained correlation matrix slightly resembles the 2019 correlation matrix as much as the 3 positively correlated explanatory variables (food, happiness, and the gdp indicators) are concerned . We also have that 2020_arrivas is this time the only indicator which we can't determine its correlation to other variables .
+
+# VII. Linear regression: 
+
+In this section, we want to study the impact of all the variables on our main variable by using a linear regression. To do so, we will first focus on the impact in 2019 and after that in 2020.   
+
 We want to estimate the following model : 
 
 $$Arrivals=\beta_0+\beta_1AverageExp+\beta_2Food+\beta_3Forest+\beta_4Happy+\beta_5GDP$$
@@ -585,12 +605,12 @@ reg1 <- lm (Tab$'2019_arrivals'~ Tab$'2019_avg'+ Tab$'2019_food' + Tab$'2019_for
 summary(reg1)
 ```
 
+
 We notice that only a single explanatory variable is significant : `2019_arrivals`.   
 In fact, looking at the value of the t-stat, we have $t_{\beta_1}=4.748$ and since $t^{-1}_{27}(1-\frac{0.05}{2})=2.052$, we get $t_{\beta_1}>t^{-1}_{27}$.    
 For all the others explenatory variable, we have the opposite, meaning that they are not significant.    
 
 We do the same but now for the second year of our study :
-
 
 ```{r}
 reg2 <- lm (Tab$'2020_arrivals'~ Tab$'2020_avg'+ Tab$'2020_food' + Tab$'2020_forest' + Tab$'2020_happy' + Tab$'2020gdp' )
@@ -600,7 +620,7 @@ summary(reg2)
 Once again, the only significant variable is `2020_arrivals`.  
     
 
-However, one should pay attention to the value of our adjusted $R^2$. In fact, in both cases, $R^2$ is not high enough (respectively $0.382$ and $0.283$). Thus, maybe this linear regression with thoses explanatory vriable is not the best, maybe the unsignificant variable are downgrading the quality of our model, suggesting that those variables may not explain the number of arrivals in a country.  
+However, one should pay attention to the value of our adjusted $R^2$. In fact, in both cases, $R^2$ is not high enough (respectively $0.382$ and $0.283$). Thus, maybe this linear regression with thoses explanatory variable is not the best, maybe the unsignificant variable are downgrading the quality of our model, suggesting that those variables may not explain the number of arrivals in a country.  
 
 
 
