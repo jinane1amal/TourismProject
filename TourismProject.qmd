@@ -634,18 +634,51 @@ durbinWatsonTest (reg1)
 durbinWatsonTest (reg2)
 ```
 
-We observe that, for both regression, the p-value is higher than $0.05$, we won't reject the null hypothesis. In fact, this result could have been more thant predicatble since our regression is not temporal and it depends on different countries, so their results and data are not correlated ith each other.  
+We observe that, for both regression, the p-value is higher than $0.05$, we won't reject the null hypothesis. In fact, this result could have been more thant predictable since our regression is not temporal and it depends on different countries, so their results and data are not correlated to each other.  
+
+# IX.Plots: 
 
 # IX. Final Scatter plots: 
 
 
 ```{r}
-scatterplot(Tab$'2019_arrivals'~ Tab$'2019_avg', data=Tab) 
+
+scatterplot(Tab$'2019_arrivals' ~ Tab$'2019_avg', data = Tab, main = "2019 Scatterplot with its Legend", 
+            xlab = "2019_avg", ylab = "2019_arrivals")
+legend("topright", legend = c("2019_arrivals"), col = c("red"), pch = 1)
+
+
 ```
 
 
 ```{r}
-scatterplot(Tab$'2020_arrivals'~ Tab$'2020_avg', data=Tab) 
+
+scatterplot(Tab$'2020_arrivals' ~ Tab$'2020_avg', data = Tab, main = "2020 Scatterplot with its Legend", 
+            xlab = "2020_avg", ylab = "2020_arrivals")
+legend("topright", legend = c("2020_arrivals"), col = c("blue"), pch = 1)
+
+```
+
+
+```{r}
+pairs(Tab[, c('2019_avg', '2019_arrivals')], col = "blue", pch = 16)
+```
+
+```{r}
+pairs(Tab[, c('2020_avg', '2020_arrivals')], col = "blue", pch = 16)
+```
+
+
+```{r}
+boxplot(Tab$'2019_arrivals' ~ Tab$'2019_avg', data = Tab, col = "lightblue", xlab = "2019_avg", ylab = "2019_arrivals", main = "Boxplot")
+
+```
+
+
+
+```{r}
+boxplot(Tab$'2020_arrivals' ~ Tab$'2020_avg', data = Tab, col = "lightblue", xlab = "2020_avg", ylab = "2020_arrivals", main = "Boxplot")
+
 ```
 
 # X. Conclusion : 
