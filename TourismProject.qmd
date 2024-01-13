@@ -1,7 +1,7 @@
 ---
 title: "Tourism project"
 author: "Lounès AÏT KARROU & Jinane AMAL"
-format: html
+format: pdf
 editor: visual
 ---
 
@@ -675,9 +675,16 @@ pairs(Tab[, c('2020_avg', '2020_arrivals')], col = "blue", pch = 16)
 
 We can observe that, in both year, there is a correlation between those two variables. They are following the same pattern of growth as we can observe in all of those grpahs, even though at some point the difference between those two is not negligible.    
 Those observations are coherent with the obtained results from the two linear regression where the coefficient was positive, translating a positive realtion between the variables.
+
 # X. Conclusion : 
 
+These quantitative analysis has helped us understand what is the most important factor in a country’s tourism attraction .
 
+Our regression results followed by graphical representations proves that the most influential variable throughout both years 2019 and 2020 (covid year) is the average expenditures which is not surprising : Indeed a higher average expenditure in a country is synonymous to  higher quality of services, luxurious experiences, cultural or business events . It can also be a sign of safety.
+
+We can also say that this high rate of tourists arrivals in these countries is achieved via effective marketing and branding which is due to their high money allocated to research and business marketing .
+
+In conclusion average expenditure is key to the success of the country’s tourism objective and this won’t change in the near future .
 
 
 
