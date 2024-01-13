@@ -640,16 +640,25 @@ We observe that, for both regression, the p-value is higher than $0.05$, we won'
 
 # IX. Final Scatter plots: 
 
+For the final part of the project, we will focus on the relation between the arrivals and the only significant explanatory variable we found on part VII : the average expenditures.    
+To do so, we are going to compare how it would have been if the two variables were perfectly correlated and what is happening in reality.
 
 ```{r}
 
 scatterplot(Tab$'2019_arrivals' ~ Tab$'2019_avg', data = Tab, main = "2019 Scatterplot with its Legend", 
             xlab = "2019_avg", ylab = "2019_arrivals")
-legend("topright", legend = c("2019_arrivals"), col = c("red"), pch = 1)
+legend("topright", legend = c("2019_arrivals"), col = c("blue"), pch = 1)
 
 
 ```
+ On this graph, the blue line represent the perfect correlation between arrivals and the average expenditures.\\
+The blue surface, for its part, represent the average dispertion of our results in real life, from our data, in 2019.    
+To observe this dispertion, we also provide below a pair of graph that represent those variable individually.
 
+```{r}
+pairs(Tab[, c('2019_avg', '2019_arrivals')], col = "blue", pch = 16)
+```
+We do the same graphs in 2020.
 
 ```{r}
 
@@ -661,26 +670,11 @@ legend("topright", legend = c("2020_arrivals"), col = c("blue"), pch = 1)
 
 
 ```{r}
-pairs(Tab[, c('2019_avg', '2019_arrivals')], col = "blue", pch = 16)
-```
-
-```{r}
 pairs(Tab[, c('2020_avg', '2020_arrivals')], col = "blue", pch = 16)
 ```
 
-
-```{r}
-boxplot(Tab$'2019_arrivals' ~ Tab$'2019_avg', data = Tab, col = "lightblue", xlab = "2019_avg", ylab = "2019_arrivals", main = "Boxplot")
-
-```
-
-
-
-```{r}
-boxplot(Tab$'2020_arrivals' ~ Tab$'2020_avg', data = Tab, col = "lightblue", xlab = "2020_avg", ylab = "2020_arrivals", main = "Boxplot")
-
-```
-
+We can observe that, in both year, there is a correlation between those two variables. They are following the same pattern of growth as we can observe in all of those grpahs, even though at some point the difference between those two is not negligible.    
+Those observations are coherent with the obtained results from the two linear regression where the coefficient was positive, translating a positive realtion between the variables.
 # X. Conclusion : 
 
 
