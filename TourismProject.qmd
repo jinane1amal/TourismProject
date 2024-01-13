@@ -110,18 +110,11 @@ nbcol <- ncol(Arrivals19vs20)
 
 The Cleaned Data set A Summary contains `r nbrows` number of columns and `r nbcol` number of rows
 
-
-<<<<<<< HEAD
-
-=======
-
-
 ### Cleaned Data set A Summary to be shown in html rendering:
 ```{r}
 print(summary(Arrivals19vs20))|>
 knitr::kable()
 ```
->>>>>>> 691925d3e6d4f911657d46601bd0598b97b931e0
 
 # Get number of rows and columns
 
