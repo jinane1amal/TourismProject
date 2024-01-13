@@ -599,15 +599,15 @@ In this section, we want to study the impact of all the variables on our main va
 
 We want to estimate the following model : 
 
-$$Arrivals=\beta_0+\beta_1AverageExp+\beta_2Food+\beta_3Forest+\beta_4Happy+\beta_5GDP$$
-
+$$Arrivals=\beta_0+\beta_1AverageExp+\beta_2Food+\beta_3Forest+\beta_4Happy+\beta_5GDP+\varepsilon$$
+With $\varepsilon$ the error vector.
 ```{r}
 reg1 <- lm (Tab$'2019_arrivals'~ Tab$'2019_avg'+ Tab$'2019_food' + Tab$'2019_forest' + Tab$'2019_happy' + Tab$'2019gdp' )
 summary(reg1)
 ```
 
 
-We notice that only a single explanatory variable is significant : `2019_arrivals`.   
+We notice that only a single explanatory variable is significant : `2019_avg`.   
 In fact, looking at the value of the t-stat, we have $t_{\beta_1}=4.748$ and since $t^{-1}_{27}(1-\frac{0.05}{2})=2.052$, we get $t_{\beta_1}>t^{-1}_{27}$.    
 For all the others explenatory variable, we have the opposite, meaning that they are not significant.    
 
@@ -618,17 +618,23 @@ reg2 <- lm (Tab$'2020_arrivals'~ Tab$'2020_avg'+ Tab$'2020_food' + Tab$'2020_for
 summary(reg2)
 ```
 
-Once again, the only significant variable is `2020_arrivals`.  
+Once again, the only significant variable is `2020_avg`.  
     
 
 However, one should pay attention to the value of our adjusted $R^2$. In fact, in both cases, $R^2$ is not high enough (respectively $0.382$ and $0.283$). Thus, maybe this linear regression with thoses explanatory variable is not the best, maybe the unsignificant variable are downgrading the quality of our model, suggesting that those variables may not explain the number of arrivals in a country.  
 
 # VIII. Durbin Watson Test: 
+Let's keep our initial model. Indeed, we wish to assess the extent to which this model violates the fundamental assumptions of simple regression.    
+To do this, we will carry out the Durbin-Watson test, a test allowing us to highlight a potential autocorrelation of the errors, in other words the errors are correlated. Mathematically, the Durbin-Watson test seeks to verify the significance of the coefficient $\rho$ in the formula:
+$$\varepsilon_i=\rho\varepsilon_j+u_i$$
+To do so, we will use the `durbinWatsonTest` available on r :
 
 ```{r}
 durbinWatsonTest (reg1)
 durbinWatsonTest (reg2)
 ```
+
+We observe that, for both regression, the p-value is higher than $0.05$, we won't reject the null hypothesis. In fact, this result could have been more thant predicatble since our regression is not temporal and it depends on different countries, so their results and data are not correlated ith each other.  
 
 # IX. Final Scatter plots: 
 
